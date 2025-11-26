@@ -1,0 +1,11 @@
+{
+    "files.associations": {
+        "*.uproject": "json",
+        "*.sfd": "sfd",
+        "*.xlaunchconfig": "xml",
+        "*.fea": "fea",
+        "qapplication": "cpp",
+        "string": "cpp",
+        "format": "cpp"
+    }
+}
