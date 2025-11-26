@@ -5,10 +5,18 @@ flag() {
 		[[ -e ".flags/$f" ]] || return 1
 	done
 }
-if flag local; then
-	:
+mkdir -p dist
+rm dist/*
+for i in Debug Release; do
+	mkdir -p build/Desktop-$i
+done
+if [[ -f "build/Desktop-Release/qt" ]]; then
+	EXEC=Release
 else
-	:
+	EXEC=Debug
 fi
-cp build/Desktop-Debug/qt dist/characters
-./dist/characters
+E="dist/characters-${EXEC,,}"
+cp build/Desktop-$EXEC/qt $E
+if flag local; then
+	./$E
+fi

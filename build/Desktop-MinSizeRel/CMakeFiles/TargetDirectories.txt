@@ -1,9 +1,0 @@
-/home/devin/Projects/characters/qt/build/Desktop-MinSizeRel/CMakeFiles/qt.dir
-/home/devin/Projects/characters/qt/build/Desktop-MinSizeRel/CMakeFiles/edit_cache.dir
-/home/devin/Projects/characters/qt/build/Desktop-MinSizeRel/CMakeFiles/rebuild_cache.dir
-/home/devin/Projects/characters/qt/build/Desktop-MinSizeRel/CMakeFiles/list_install_components.dir
-/home/devin/Projects/characters/qt/build/Desktop-MinSizeRel/CMakeFiles/install.dir
-/home/devin/Projects/characters/qt/build/Desktop-MinSizeRel/CMakeFiles/install/local.dir
-/home/devin/Projects/characters/qt/build/Desktop-MinSizeRel/CMakeFiles/install/strip.dir
-/home/devin/Projects/characters/qt/build/Desktop-MinSizeRel/CMakeFiles/qt_autogen_timestamp_deps.dir
-/home/devin/Projects/characters/qt/build/Desktop-MinSizeRel/CMakeFiles/qt_autogen.dir
