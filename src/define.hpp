@@ -4,3 +4,4 @@
 #define schwa "\u0259"
 #define ezh "\u0292"
 #define eh "e\u0323"
+#define ash "\u00E6"
