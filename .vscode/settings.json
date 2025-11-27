@@ -64,7 +64,12 @@
         "thread": "cpp",
         "typeinfo": "cpp",
         "variant": "cpp",
-        "csignal": "cpp"
+        "csignal": "cpp",
+        "iostream": "cpp",
+        "qvboxlayout": "cpp",
+        "qstackedwidget": "cpp",
+        "set": "cpp",
+        "ranges": "cpp"
     },
     "C_Cpp.errorSquiggles": "enabled"
 }

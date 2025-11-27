@@ -1,96 +1,65 @@
-#include <QApplication>
-#include <QWidget>
-#include <QVBoxLayout>
-#include <QHBoxLayout>
-#include <QPushButton>
-#include <QLabel>
-#include <QObject>
-#include <QDebug>
-#include <QMessageBox>
-#include <string>
-#include <unordered_map>
-#include <csignal>
-#include <format>
-#include <list>
-#define omega "\u03C9"
-#define acute "\u0301"
-#define schwa "\u0259"
-#define grave "\u0300"
-struct Character
-{
-	std::string name, pron, sex, species;
-	std::list<std::string> extra;
-};
+#include "src/main.hpp"
 int main(int argc, char *argv[])
 {
-	std::list<Character> characters = {
-		{
-			"Hound",
-			"haund",
-			"Female",
-			"Changeling",
-			{
-				"Shapeshifts into a large, black wolf",
-			},
-		},
-		{
-			"Morrigan",
-			std::format("m{}{}r{}gy{}n", omega, acute, schwa, grave),
-			"Female",
-			"Reaper",
-			{
-				"Killing touch",
-				"Wields a scythe",
-			},
-		},
-	};
+	std::set<Character, CharCompare> characters;
+	characters.insert(
+		{"Female",
+		 {"Hound",
+		  ""},
+		 {"haund",
+		  ""},
+		 {"Human",
+		  "Changeling"},
+		 {"Shapeshifts into a large, black wolf"}});
+	characters.insert(
+		{"Female",
+		 {"Morrigan",
+		  ""},
+		 {std::format("m{}{}r{}gy{}n", omega, acute, schwa, grave),
+		  ""},
+		 {"Reaper"},
+		 {"Killing touch",
+		  "Wields a scythe"}});
+	std::list<Character> chars(
+		characters.begin(),
+		characters.end());
+	chars.push_front(
+		{"",
+		 {"Character",
+		  "Name"},
+		 {std::format("k{}rykt{}r", eh, schwa),
+		  std::format("n{}jm", eh)}});
 	QApplication app(argc, argv);
 	QWidget win;
-	QVBoxLayout *mainLayout = new QVBoxLayout();
-	QLabel *header = new QLabel("Characters");
-	mainLayout->addWidget(header);
-	QHBoxLayout *hLayout = new QHBoxLayout();
-	for (const Character &c : characters)
-	{
-		QPushButton *character = new QPushButton(QString::fromStdString(c.name));
-		QObject::connect(
-			character,
-			&QPushButton::clicked,
-			[&win, c]()
-			{
-				std::string sex;
-				if (c.sex == "Male")
-				{
-					sex = "\u2642";
-				}
-				else if (c.sex == "Female")
-				{
-					sex = "\u2640";
-				}
-				else
-				{
-					sex = "\u26A5";
-				}
-				std::string body;
-				body += std::format("{}{}\n", c.name, sex);
-				body += std::format("\t<{}>\n", c.pron);
-				body += std::format("Species:\n");
-				body += std::format("\t{}\n", c.species);
-				body += std::format("Extra:\n");
-				for (const std::string &e : c.extra)
-				{
-					body += std::format("\t- {}\n", e);
-				}
-				QMessageBox::information(
-					&win,
-					"Character Selected",
-					QString::fromStdString(body));
-			});
-		hLayout->addWidget(character);
-	}
-	mainLayout->addLayout(hLayout);
-	win.setLayout(mainLayout);
 	win.setWindowTitle("Characters");
+	QVBoxLayout *mainLayout = new QVBoxLayout(&win);
+	QStackedWidget *stack = new QStackedWidget();
+	mainLayout->addWidget(stack);
+	QHBoxLayout *buttonRow = new QHBoxLayout();
+	mainLayout->addLayout(buttonRow);
+	int index = 0;
+	for (const Character &c : chars)
+	{
+		stack->addWidget(new CharView(c));
+		if (index > 0)
+		{
+			std::string name;
+			QPushButton *btn = new QPushButton(QString::fromStdString(join(c.name)));
+			QObject::connect(
+				btn,
+				&QPushButton::clicked,
+				[stack, index]()
+				{
+					stack->setCurrentIndex(index);
+				});
+			buttonRow->addWidget(btn);
+			stack->setStyleSheet(css({
+				{"font-size",
+				 "20pt"},
+			}));
+		}
+		index++;
+	}
 	win.show();
 	return app.exec();
 }

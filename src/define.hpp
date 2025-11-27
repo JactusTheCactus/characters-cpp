@@ -1,0 +1,6 @@
+#define acute "\u0301"
+#define grave "\u0300"
+#define omega "\u03C9"
+#define schwa "\u0259"
+#define ezh "\u0292"
+#define eh "e\u0323"

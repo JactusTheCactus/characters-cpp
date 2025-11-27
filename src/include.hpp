@@ -1,0 +1,16 @@
+#include <string>
+#include <list>
+#include <format>
+#include <set>
+#include <ranges>
+#include <sstream>
+#include <iostream>
+#include <unordered_map>
+#include <QWidget>
+#include <QVBoxLayout>
+#include <QLabel>
+#include <QApplication>
+#include <QPushButton>
+#include <QStackedWidget>
+#include <algorithm>
+#include <iterator>
