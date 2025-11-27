@@ -14,9 +14,9 @@ int main(int argc, char *argv[])
 	characters.insert(
 		{"Female",
 		 {"Morrigan",
-		  ""},
+		  "Heffernan"},
 		 {std::format("m{}{}r{}gy{}n", omega, acute, schwa, grave),
-		  ""},
+		  std::format("he{}f{}rny{}n",acute,schwa,grave)},
 		 {"Reaper"},
 		 {"Killing touch",
 		  "Wields a scythe"}});
