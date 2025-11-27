@@ -10,50 +10,81 @@
 #include <string>
 #include <unordered_map>
 #include <csignal>
-#include <string>
-#include <sstream>
 #include <format>
-std::unordered_map<
-	std::string,
-	std::unordered_map<
-		std::string,
-		std::string>>
-	chars = {
-		{"hound",
-		 {{"name", "Hound"},
-		  {"sex", "Female"}}},
-		{"morrigan",
-		 {{"name", "Morrigan"},
-		  {"sex", "Female"}}}};
+#include <list>
+#define omega "\u03C9"
+#define acute "\u0301"
+#define schwa "\u0259"
+#define grave "\u0300"
+struct Character
+{
+	std::string name, pron, sex, species;
+	std::list<std::string> extra;
+};
 int main(int argc, char *argv[])
 {
+	std::list<Character> characters = {
+		{
+			"Hound",
+			"haund",
+			"Female",
+			"Changeling",
+			{
+				"Shapeshifts into a large, black wolf",
+			},
+		},
+		{
+			"Morrigan",
+			std::format("m{}{}r{}gy{}n", omega, acute, schwa, grave),
+			"Female",
+			"Reaper",
+			{
+				"Killing touch",
+				"Wields a scythe",
+			},
+		},
+	};
 	QApplication app(argc, argv);
 	QWidget win;
 	QVBoxLayout *mainLayout = new QVBoxLayout();
 	QLabel *header = new QLabel("Characters");
 	mainLayout->addWidget(header);
 	QHBoxLayout *hLayout = new QHBoxLayout();
-	for (const auto &[k, _] : chars)
+	for (const Character &c : characters)
 	{
-		const auto &c = chars.at(k);
-		std::string name = c.at("name");
-		std::string s = c.at("sex");
-		std::string sex =
-			s == "Male"
-				? "\u2642"
-			: s == "Female"
-				? "\u2640"
-				: "\u26A5";
-		QPushButton *character = new QPushButton(QString::fromStdString(name));
+		QPushButton *character = new QPushButton(QString::fromStdString(c.name));
 		QObject::connect(
 			character,
 			&QPushButton::clicked,
-			[&win, name, sex]()
+			[&win, c]()
 			{
+				std::string sex;
+				if (c.sex == "Male")
+				{
+					sex = "\u2642";
+				}
+				else if (c.sex == "Female")
+				{
+					sex = "\u2640";
+				}
+				else
+				{
+					sex = "\u26A5";
+				}
+				std::string body;
+				body += std::format("{}{}\n", c.name, sex);
+				body += std::format("\t<{}>\n", c.pron);
+				body += std::format("Species:\n");
+				body += std::format("\t{}\n", c.species);
+				body += std::format("Extra:\n");
+				for (const std::string &e : c.extra)
+				{
+					body += std::format("\t- {}\n", e);
+				}
 				QMessageBox::information(
 					&win,
 					"Character Selected",
-					QString::fromStdString(std::format("You selected {}{}!", name, sex)));
+					QString::fromStdString(body));
 			});
 		hLayout->addWidget(character);
 	}
