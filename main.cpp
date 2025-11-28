@@ -5,7 +5,7 @@ int main(int argc, char *argv[])
 	characters.insert(
 		{"Female",
 		 {"Hound",
-		  "Nic Conmara"},
+		  "NcNamara"},
 		 {"haund",
 		  std::format("ny{}kn{}m{}{}r{}", acute, schwa, eh, grave, schwa)},
 		 {"Human",
