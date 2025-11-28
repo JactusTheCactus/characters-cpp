@@ -1,6 +1,6 @@
 CMakeFiles/qt.dir/mainwindow.cpp.o: \
-  /home/devin/Projects/characters/qt/mainwindow.cpp \
-  /home/devin/Projects/characters/qt/mainwindow.h \
+  /home/devin/Projects/characters-/c++/mainwindow.cpp \
+  /home/devin/Projects/characters-/c++/mainwindow.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/QMainWindow \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qmainwindow.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtwidgetsglobal.h \
@@ -388,7 +388,7 @@ CMakeFiles/qt.dir/mainwindow.cpp.o: \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qkeysequence.h \
   /usr/include/x86_64-linux-gnu/qt5/QtWidgets/qtabwidget.h \
   /usr/include/x86_64-linux-gnu/qt5/QtGui/qicon.h \
-  /home/devin/Projects/characters/qt/build/Desktop-Debug/qt_autogen/include/./ui_mainwindow.h \
+  /home/devin/Projects/characters-/c++/build/Desktop-Debug/qt_autogen/include/./ui_mainwindow.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/QVariant \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qvariant.h \
   /usr/include/x86_64-linux-gnu/qt5/QtCore/qmap.h \

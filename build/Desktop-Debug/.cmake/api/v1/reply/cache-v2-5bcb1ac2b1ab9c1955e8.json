@@ -55,7 +55,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/devin/Projects/characters/qt/build/Desktop-Debug"
+			"value" : "/home/devin/Projects/characters-/c++/build/Desktop-Debug"
 		},
 		{
 			"name" : "CMAKE_CACHE_MAJOR_VERSION",
@@ -483,7 +483,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/devin/Projects/characters/qt/build/Desktop-Debug/CMakeFiles/pkgRedirects"
+			"value" : "/home/devin/Projects/characters-/c++/build/Desktop-Debug/CMakeFiles/pkgRedirects"
 		},
 		{
 			"name" : "CMAKE_GENERATOR",
@@ -543,7 +543,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "/home/devin/Projects/characters/qt"
+			"value" : "/home/devin/Projects/characters-/c++"
 		},
 		{
 			"name" : "CMAKE_INSTALL_BINDIR",
@@ -1055,7 +1055,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "/home/devin/Projects/characters/qt/build/Desktop-Debug/.qtc/package-manager/auto-setup.cmake"
+			"value" : "/home/devin/Projects/characters-/c++/build/Desktop-Debug/.qtc/package-manager/auto-setup.cmake"
 		},
 		{
 			"name" : "CMAKE_PROJECT_NAME",
@@ -1067,7 +1067,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "qt"
+			"value" : "cpp"
 		},
 		{
 			"name" : "CMAKE_PROJECT_VERSION",
@@ -1534,7 +1534,7 @@
 			"value" : "/usr/local"
 		},
 		{
-			"name" : "qt_BINARY_DIR",
+			"name" : "cpp_BINARY_DIR",
 			"properties" : 
 			[
 				{
@@ -1543,10 +1543,10 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/devin/Projects/characters/qt/build/Desktop-Debug"
+			"value" : "/home/devin/Projects/characters-/c++/build/Desktop-Debug"
 		},
 		{
-			"name" : "qt_IS_TOP_LEVEL",
+			"name" : "cpp_IS_TOP_LEVEL",
 			"properties" : 
 			[
 				{
@@ -1558,7 +1558,7 @@
 			"value" : "ON"
 		},
 		{
-			"name" : "qt_SOURCE_DIR",
+			"name" : "cpp_SOURCE_DIR",
 			"properties" : 
 			[
 				{
@@ -1567,7 +1567,7 @@
 				}
 			],
 			"type" : "STATIC",
-			"value" : "/home/devin/Projects/characters/qt"
+			"value" : "/home/devin/Projects/characters-/c++"
 		}
 	],
 	"kind" : "cache",

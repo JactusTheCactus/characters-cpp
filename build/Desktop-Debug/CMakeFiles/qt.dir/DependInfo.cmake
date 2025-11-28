@@ -9,9 +9,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "" "qt_autogen/timestamp" "custom" "qt_autogen/deps"
-  "/home/devin/Projects/characters/qt/main.cpp" "CMakeFiles/qt.dir/main.cpp.o" "gcc" "CMakeFiles/qt.dir/main.cpp.o.d"
-  "/home/devin/Projects/characters/qt/mainwindow.cpp" "CMakeFiles/qt.dir/mainwindow.cpp.o" "gcc" "CMakeFiles/qt.dir/mainwindow.cpp.o.d"
-  "/home/devin/Projects/characters/qt/build/Desktop-Debug/qt_autogen/mocs_compilation.cpp" "CMakeFiles/qt.dir/qt_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/qt.dir/qt_autogen/mocs_compilation.cpp.o.d"
+  "/home/devin/Projects/characters-/c++/main.cpp" "CMakeFiles/qt.dir/main.cpp.o" "gcc" "CMakeFiles/qt.dir/main.cpp.o.d"
+  "/home/devin/Projects/characters-/c++/mainwindow.cpp" "CMakeFiles/qt.dir/mainwindow.cpp.o" "gcc" "CMakeFiles/qt.dir/mainwindow.cpp.o.d"
+  "/home/devin/Projects/characters-/c++/build/Desktop-Debug/qt_autogen/mocs_compilation.cpp" "CMakeFiles/qt.dir/qt_autogen/mocs_compilation.cpp.o" "gcc" "CMakeFiles/qt.dir/qt_autogen/mocs_compilation.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

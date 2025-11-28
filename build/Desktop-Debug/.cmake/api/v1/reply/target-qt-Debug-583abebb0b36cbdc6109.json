@@ -31,25 +31,25 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 40,
+				"line" : 37,
 				"parent" : 0
 			},
 			{
 				"command" : 1,
 				"file" : 0,
-				"line" : 63,
+				"line" : 58,
 				"parent" : 0
 			},
 			{
 				"command" : 2,
 				"file" : 0,
-				"line" : 46,
+				"line" : 41,
 				"parent" : 0
 			},
 			{
 				"command" : 5,
 				"file" : 0,
-				"line" : 14,
+				"line" : 13,
 				"parent" : 0
 			},
 			{
@@ -112,7 +112,7 @@
 			[
 				{
 					"backtrace" : 0,
-					"path" : "/home/devin/Projects/characters/qt/build/Desktop-Debug/qt_autogen/include"
+					"path" : "/home/devin/Projects/characters-/c++/build/Desktop-Debug/qt_autogen/include"
 				},
 				{
 					"backtrace" : 3,

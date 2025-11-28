@@ -5,8 +5,8 @@ flag() {
 		[[ -e ".flags/$f" ]] || return 1
 	done
 }
-mkdir -p dist
-rm dist/*
+rm dist -r
+mkdir dist
 for i in Debug Release; do
 	mkdir -p build/Desktop-$i
 done

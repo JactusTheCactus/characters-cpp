@@ -30,15 +30,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
 # For more information, see https://doc.qt.io/qt-6/qt-add-executable.html#target-creation
 else()
     if(ANDROID)
-        add_library(qt SHARED
-            ${PROJECT_SOURCES}
-        )
+        add_library(qt SHARED ${PROJECT_SOURCES})
 # Define properties for Android with Qt 5 after find_package() calls as:
 #    set(ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android")
     else()
-        add_executable(qt
-            ${PROJECT_SOURCES}
-        )
+        add_executable(qt ${PROJECT_SOURCES})
     endif()
 endif()
 

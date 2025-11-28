@@ -1,5 +1,5 @@
-/home/devin/Projects/characters/qt/build/Desktop-Debug/qt_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/devin/Projects/characters/qt/mainwindow.h \
-  /home/devin/Projects/characters/qt/build/Desktop-Debug/qt_autogen/moc_predefs.h \
+/home/devin/Projects/characters-/c++/build/Desktop-Debug/qt_autogen/EWIEGA46WW/moc_mainwindow.cpp: /home/devin/Projects/characters-/c++/mainwindow.h \
+  /home/devin/Projects/characters-/c++/build/Desktop-Debug/qt_autogen/moc_predefs.h \
   /usr/include/asm-generic/errno-base.h \
   /usr/include/asm-generic/errno.h \
   /usr/include/assert.h \

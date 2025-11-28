@@ -7,7 +7,7 @@
 				{
 					"build" : ".",
 					"hasInstallRule" : true,
-					"jsonFile" : "directory-.-Debug-15bd5bfd98e274ba89c9.json",
+					"jsonFile" : "directory-.-Debug-c5cce1ed4b053ebbb704.json",
 					"minimumCMakeVersion" : 
 					{
 						"string" : "3.5"
@@ -30,7 +30,7 @@
 					[
 						0
 					],
-					"name" : "qt",
+					"name" : "cpp",
 					"targetIndexes" : 
 					[
 						0,
@@ -44,7 +44,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "qt::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-qt-Debug-ca9c318c4c95081c60ee.json",
+					"jsonFile" : "target-qt-Debug-583abebb0b36cbdc6109.json",
 					"name" : "qt",
 					"projectIndex" : 0
 				},
@@ -68,8 +68,8 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "/home/devin/Projects/characters/qt/build/Desktop-Debug",
-		"source" : "/home/devin/Projects/characters/qt"
+		"build" : "/home/devin/Projects/characters-/c++/build/Desktop-Debug",
+		"source" : "/home/devin/Projects/characters-/c++"
 	},
 	"version" : 
 	{
